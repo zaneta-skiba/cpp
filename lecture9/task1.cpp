@@ -1,5 +1,5 @@
-/*Write a program that displays the results of bit operations:
-NOT , >>, <<, for a user specified positive integer . Display its binary form.
+/*Write a program that displays the results of bit operations: NOT , >>, <<, for a user specified positive integer.
+Display its binary form.
 Display the result on the screen as decimal and binary numbers.*/
 
 #include <iostream>
@@ -13,16 +13,19 @@ int main()
     unsigned int decimal;
     unsigned short int answear;
     short int x;
-
+    
+    //Prompt user for an integer
     cout << "Enter an integer: ";
     cin >> decimal;
 
+    //Check if the number is an integer
     if(cin.good() == false)
     {
 	cout << "Should be an integer!\n";
 	return 1;
     }
 
+    //Display user's number in binary
     cout << "Binary: " << dec2bin(decimal) << endl;
 
     cout << "What bitwise operation do you want to perform on this number?\n";
