@@ -13,20 +13,24 @@ int main()
 
     cout << "Enter the first decimal number: ";
     cin >> first_value;
+    //Check if the number is an integer
     if (cin.good() == false)
     {
         cout << "Should be a positive integer\n";
 	return 1;
     }
+    //Display user's number in binary
     cout << "Its binary form is: " << dec2bin(first_value) << endl;
 
     cout << "Enter the second decimal number: ";
     cin >> second_value;
+    //Check if the number is an integer
     if(cin.good() == false)
     {
 	cout << "Should be a positive integer\n";
 	return 1;
     }
+    //Display user's number in binary
     cout << "Its binary form is: " << dec2bin(second_value) << endl;
   
     cout << "What kind of bitwise operation do you want to perform on these numbers?\n";
@@ -53,6 +57,7 @@ int main()
     return 0;
 }
 
+//Convert decimal number to binary
 string dec2bin(unsigned short int x)
 {
     string result = "";
