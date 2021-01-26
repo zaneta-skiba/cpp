@@ -15,18 +15,18 @@ int main()
 
     cout << "Enter an integer number: ";
     cin >> x;
-
+    //Check if the number is an integer
     if (cin.good() == false)
     {
 	cout << "Should be a positive integer\n";
 	return 1;
     }
-
+    
     cout << "Binary: " << dec2bin(x) << endl;
     cout << "Number of set bits: " << count_set_bits(x) << endl;
     return 0;
 }
-
+//Convert decimal number to binary
 string dec2bin(unsigned int x)
 {
     string result = "";
@@ -39,7 +39,7 @@ string dec2bin(unsigned int x)
     } while (x);
     return result;
 }
-
+//Count the amount of set bits
 int count_set_bits(unsigned int x)
 {
     int amount = 0;
